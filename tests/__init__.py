@@ -1,0 +1,1 @@
+"""SNIPLY Automated Test Suite."""

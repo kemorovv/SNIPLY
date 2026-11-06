@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# PyInstaller & Packaging artifacts
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Local user data, SQLite databases, logs, and captured images (NEVER COMMIT)
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.log
+user_data/
+backups/
+thumbnails/
+
+# Pytest & coverage caches
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# IDE & OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

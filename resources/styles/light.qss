@@ -1,0 +1,121 @@
+/* ============================================================================
+   SNIPLY — Clean Light Theme (QSS)
+   ============================================================================ */
+
+QWidget {
+    background-color: #F7F7FA;
+    color: #17181C;
+    font-family: "Inter", "Segoe UI Variable Display", "Segoe UI", sans-serif;
+    font-size: 13px;
+    selection-background-color: #7C3AED;
+    selection-color: #FFFFFF;
+}
+
+QMainWindow, QDialog {
+    background-color: #F7F7FA;
+}
+
+QFrame#SidebarContainer {
+    background-color: #EFEFF5;
+    border-right: 1px solid #E2E2EC;
+}
+
+QPushButton#NavButton {
+    background-color: transparent;
+    color: #525160;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+QPushButton#NavButton:hover {
+    background-color: #E6E6F0;
+    color: #17181C;
+}
+
+QPushButton#NavButton[active="true"] {
+    background-color: rgba(124, 58, 237, 0.12);
+    color: #6D28D9;
+    border: 1px solid rgba(124, 58, 237, 0.30);
+    font-weight: 600;
+}
+
+QFrame#InspectorPanel {
+    background-color: #EFEFF5;
+    border-left: 1px solid #E2E2EC;
+}
+
+QFrame#ClipCard, QFrame#ColorCard, QFrame#ImageCard, QFrame#SnippetCard, QFrame#StatCard {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2EC;
+    border-radius: 11px;
+}
+
+QFrame#ClipCard:hover, QFrame#ColorCard:hover, QFrame#ImageCard:hover, QFrame#SnippetCard:hover {
+    background-color: #F7F7FA;
+    border: 1px solid #D4D4E0;
+}
+
+QFrame#ClipCard[selected="true"], QFrame#ColorCard[selected="true"], QFrame#ImageCard[selected="true"] {
+    background-color: #FFFFFF;
+    border: 1px solid #7C3AED;
+}
+
+QLineEdit, QTextEdit, QPlainTextEdit, QSpinBox, QComboBox {
+    background-color: #FFFFFF;
+    color: #17181C;
+    border: 1px solid #D4D4E0;
+    border-radius: 8px;
+    padding: 7px 11px;
+    font-size: 13px;
+}
+
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus, QComboBox:focus {
+    border: 1px solid #7C3AED;
+}
+
+QPushButton {
+    background-color: #FFFFFF;
+    color: #17181C;
+    border: 1px solid #D4D4E0;
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: #EFEFF5;
+}
+
+QPushButton#PrimaryButton {
+    background-color: #7C3AED;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 600;
+}
+
+QPushButton#PrimaryButton:hover {
+    background-color: #8B5CF6;
+}
+
+QMenu {
+    background-color: #FFFFFF;
+    color: #17181C;
+    border: 1px solid #D4D4E0;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+QMenu::item:selected {
+    background-color: rgba(124, 58, 237, 0.12);
+    color: #6D28D9;
+}
+
+QFrame#QuickPasteContainer {
+    background-color: #FFFFFF;
+    border: 1px solid #D4D4E0;
+    border-radius: 14px;
+}

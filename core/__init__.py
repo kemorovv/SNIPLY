@@ -1,0 +1,1 @@
+"""SNIPLY Core Package."""

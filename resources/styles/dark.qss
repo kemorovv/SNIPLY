@@ -1,0 +1,194 @@
+/* ============================================================================
+   SNIPLY — Premium Dark Productivity Theme (QSS)
+   Inspired by Linear, Raycast, and modern developer tools.
+   ============================================================================ */
+
+QWidget {
+    background-color: #17181C;
+    color: #F4F2FA;
+    font-family: "Inter", "Segoe UI Variable Display", "Segoe UI", sans-serif;
+    font-size: 13px;
+    selection-background-color: #8B5CF6;
+    selection-color: #F4F2FA;
+}
+
+QMainWindow, QDialog {
+    background-color: #17181C;
+}
+
+/* Sidebar Surface */
+QFrame#SidebarContainer {
+    background-color: #1C1D23;
+    border-right: 1px solid #292A32;
+}
+
+QPushButton#NavButton {
+    background-color: transparent;
+    color: #A3A1AE;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+QPushButton#NavButton:hover {
+    background-color: #22232A;
+    color: #F4F2FA;
+}
+
+QPushButton#NavButton[active="true"] {
+    background-color: rgba(167, 139, 250, 0.14);
+    color: #F4F2FA;
+    border: 1px solid rgba(167, 139, 250, 0.35);
+    font-weight: 600;
+}
+
+/* Inspector Panel */
+QFrame#InspectorPanel {
+    background-color: #1C1D23;
+    border-left: 1px solid #292A32;
+}
+
+/* Cards & Elevated Surfaces */
+QFrame#ClipCard, QFrame#ColorCard, QFrame#ImageCard, QFrame#SnippetCard, QFrame#StatCard {
+    background-color: #22232A;
+    border: 1px solid #292A32;
+    border-radius: 11px;
+}
+
+QFrame#ClipCard:hover, QFrame#ColorCard:hover, QFrame#ImageCard:hover, QFrame#SnippetCard:hover {
+    background-color: #282932;
+    border: 1px solid #30313B;
+}
+
+QFrame#ClipCard[selected="true"], QFrame#ColorCard[selected="true"], QFrame#ImageCard[selected="true"] {
+    background-color: #282932;
+    border: 1px solid #A78BFA;
+}
+
+/* Demo Mode Banner */
+QFrame#DemoBanner {
+    background-color: rgba(139, 92, 246, 0.14);
+    border: 1px solid rgba(167, 139, 250, 0.4);
+    border-radius: 9px;
+}
+
+/* Inputs & Search Fields */
+QLineEdit, QTextEdit, QPlainTextEdit, QSpinBox, QComboBox {
+    background-color: #1C1D23;
+    color: #F4F2FA;
+    border: 1px solid #30313B;
+    border-radius: 8px;
+    padding: 7px 11px;
+    font-size: 13px;
+}
+
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus, QComboBox:focus {
+    border: 1px solid #A78BFA;
+    background-color: #22232A;
+}
+
+/* Primary & Secondary Buttons */
+QPushButton {
+    background-color: #22232A;
+    color: #F4F2FA;
+    border: 1px solid #30313B;
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: #282932;
+    border-color: #A3A1AE;
+}
+
+QPushButton:pressed {
+    background-color: #1C1D23;
+}
+
+QPushButton#PrimaryButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #A78BFA, stop:1 #8B5CF6);
+    color: #17181C;
+    border: none;
+    font-weight: 600;
+}
+
+QPushButton#PrimaryButton:hover {
+    background-color: #B99AFF;
+}
+
+QPushButton#DangerButton {
+    background-color: rgba(240, 120, 134, 0.14);
+    color: #F07886;
+    border: 1px solid rgba(240, 120, 134, 0.35);
+}
+
+QPushButton#DangerButton:hover {
+    background-color: rgba(240, 120, 134, 0.25);
+}
+
+/* Custom Context Menu */
+QMenu {
+    background-color: #22232A;
+    color: #F4F2FA;
+    border: 1px solid #30313B;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+QMenu::item {
+    padding: 7px 24px 7px 12px;
+    border-radius: 6px;
+}
+
+QMenu::item:selected {
+    background-color: rgba(167, 139, 250, 0.18);
+    color: #F4F2FA;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: #292A32;
+    margin: 4px 8px;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    background: transparent;
+    width: 8px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical {
+    background: #30313B;
+    min-height: 28px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #72717E;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* Tooltips */
+QToolTip {
+    background-color: #282932;
+    color: #F4F2FA;
+    border: 1px solid #30313B;
+    border-radius: 6px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+/* Quick Paste Popup */
+QFrame#QuickPasteContainer {
+    background-color: #1C1D23;
+    border: 1px solid #30313B;
+    border-radius: 14px;
+}
